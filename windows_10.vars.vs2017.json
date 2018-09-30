@@ -1,0 +1,14 @@
+{
+    "_comment": "Build with `packer build -var-file=windows_10.vars.vs2017.json windows_10.json`",
+    "iso_url": "./iso/en-gb_windows_10_business_edition_version_1803_updated_sep_2018_x64_dvd_472941f3.iso",
+    "iso_checksum_type": "sha1",
+    "iso_checksum": "107806F418FAD692645FB0043F9F2638D7E0635B",
+    "autounattend": "./answer_files/windows_10/Autounattend.xml",
+    "headless": "false",
+    "cpus": "2",
+    "memory_size": "2048",
+    "disk_size": "61440",
+    "vs2017": "true",
+    "version": "0.1.0",
+    "vm_name": "windows_10_vs2017"
+}
