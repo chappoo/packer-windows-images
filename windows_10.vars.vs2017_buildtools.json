@@ -1,8 +1,8 @@
 {
     "_comment": "Build with `packer build -var-file=windows_10.vars.vs2017_buildtools.json windows_10.json`",
-    "iso_url": "./iso/en-gb_windows_10_business_edition_version_1803_updated_sep_2018_x64_dvd_472941f3.iso",
+    "iso_url": "./iso/en-gb_windows_10_business_editions_version_1809_updated_dec_2018_x64_dvd_71601304.iso",
     "iso_checksum_type": "sha1",
-    "iso_checksum": "107806F418FAD692645FB0043F9F2638D7E0635B",
+    "iso_checksum": "D3701313888FB204FF9B31E7479386301A80D3A2",
     "autounattend": "./answer_files/windows_10/Autounattend.xml",
     "headless": "false",
     "cpus": "2",
