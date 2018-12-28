@@ -6,6 +6,6 @@
     "autounattend": "./answer_files/windows_10/Autounattend.xml",
     "headless": "false",
     "cpus": "2",
-    "memory_size": "2048",
+    "memory_size": "4096",
     "disk_size": "61440"
 }

@@ -6,7 +6,7 @@
     "autounattend": "./answer_files/windows_10/Autounattend.xml",
     "headless": "false",
     "cpus": "2",
-    "memory_size": "2048",
+    "memory_size": "4096",
     "disk_size": "61440",
     "vs2017_buildtools": "true",
     "version": "0.1.0",
