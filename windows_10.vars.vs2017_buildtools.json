@@ -10,5 +10,5 @@
     "disk_size": "61440",
     "vs2017_buildtools": "true",
     "version": "0.1.0",
-    "vm_name": "windows_10_vs2017_buildtools"
+    "vm_name": "windows10-vs2017-buildtools"
 }

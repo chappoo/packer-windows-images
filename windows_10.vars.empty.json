@@ -7,5 +7,7 @@
     "headless": "false",
     "cpus": "2",
     "memory_size": "4096",
-    "disk_size": "61440"
+    "disk_size": "61440",
+    "version": "0.1.0",
+    "vm_name": "windows10"
 }

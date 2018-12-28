@@ -3,6 +3,7 @@
     "builders": [
         {
             "type": "vmware-iso",
+            "vm_name": "{{ user `vm_name` }}",
             "iso_url": "{{user `iso_url`}}",
             "iso_checksum_type": "{{user `iso_checksum_type`}}",
             "iso_checksum": "{{user `iso_checksum`}}",
@@ -68,7 +69,7 @@
         {
             "type": "vagrant",
             "output": "box/{{.Provider}}/{{user `vm_name`}}-{{user `version`}}.box",
-            "vagrantfile_template": "./vagrant_files/windows_10/vagrantfile.template"
+            "vagrantfile_template": "./vagrant_files/windows10/vagrantfile.template"
         }
     ],
     "variables": {
@@ -83,6 +84,6 @@
         "vs2017": "false",
         "vs2017_buildtools": "false",
         "version": "0.1.0",
-        "vm_name": "windows_10"
+        "vm_name": "windows10"
     }
 }
