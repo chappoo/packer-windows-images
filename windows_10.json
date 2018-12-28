@@ -17,8 +17,12 @@
             "tools_upload_flavor": "windows",
             "tools_upload_path": "C:/Windows/Temp/windows.iso",
             "disk_size": "{{user `disk_size`}}",
+            "disk_adapter_type": "lsisas1068",
             "vnc_port_min": 5900,
             "vnc_port_max": 5980,
+            "cpus": "{{user `cpus`}}",
+            "memory": "{{user `memory_size`}}",
+            "version": 16,
             "floppy_files": [
                 "{{user `autounattend`}}",
                 "./scripts/fixnetwork.ps1",
@@ -27,12 +31,6 @@
                 "./scripts/openssh.ps1"
             ],
             "vmx_data": {
-                "RemoteDisplay.vnc.enabled": "false",
-                "RemoteDisplay.vnc.port": "5900",
-                "memsize": "{{user `memory_size`}}",
-                "numvcpus": "{{user `cpus`}}",
-                "scsi0.virtualDev": "lsisas1068",
-                "virtualhw.version": "16",
                 "mks.enable3d": "TRUE"
             }
         }
@@ -69,7 +67,6 @@
     "post-processors": [
         {
             "type": "vagrant",
-            "keep_input_artifact": false,
             "output": "box/{{.Provider}}/{{user `vm_name`}}-{{user `version`}}.box",
             "vagrantfile_template": "./vagrant_files/windows_10/vagrantfile.template"
         }
